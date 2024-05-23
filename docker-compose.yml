@@ -1,0 +1,38 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:12
+    container_name: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Gozo!@34
+      POSTGRES_DB: api
+    ports:
+      - "5432:5432"
+  
+  
+   
+
+  nestjs-app:
+    build: .
+    container_name: nestjs-app
+    environment:
+      TYPEORM_CONNECTION: postgres://ue8j1571hptvhg:pdcdc65fdedf8ea8b7591c380047e0c7672bb6d4d15e43ad0d4593b7a272ed76a@c5hilnj7pn10vb.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/d4hspffth2ak1p
+      TYPEORM_HOST: c5hilnj7pn10vb.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com
+      TYPEORM_PORT: 5432
+      TYPEORM_USERNAME: ue8j1571hptvhg
+      TYPEORM_PASSWORD: pdcdc65fdedf8ea8b7591c380047e0c7672bb6d4d15e43ad0d4593b7a272ed76a
+      TYPEORM_DATABASE: d4hspffth2ak1p
+      REDIS_HOST: redis-15546.c62.us-east-1-4.ec2.redns.redis-cloud.com
+      REDIS_PORT: 15546
+      REDIS_PASSWORD: 3MPJwG5AEPsgVwFqZpeBIci7OS7Yr9HY
+      REDIS_DB: redis-rediscloud-sinuous-80403
+    depends_on:
+      - postgres
+      - redis
+    ports:
+      - "3000:3000"
+   
+
+networks:
+  overlay:
