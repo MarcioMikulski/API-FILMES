@@ -22,9 +22,24 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## Description of API-FILMES
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Está é uma aplicação Nestjs, uma API de Filmes, onde construi uma CRUD completa nela. Todos os endpoints dessa CRUD só podem ser consumidas por um usuário autenticado.
+Tem o endpojnt para criar o usuario, um para logar e adquirir o Token JWT e assim pode logar na api e pode ultilizar o crud, lembrando que se o usuario não estiver logado e com o token, ele não podera navegar pelos endpoints do catalogo.
+Com o nestjs todo o codigo é feito em TYPESCRIPT, banco de dados foi o POSTGRES com o TypeORM, para cache usamos o REDIS e para a documentação usamos o SWAGGER. 
+O deploy dela foi realizada no heroku com o Container Registry.
+
+## About me
+Trabalho com o Nestjs a um ano, entre estudos, projetos pessoais e trabalho voluntario.
+Como voluntario na empresa pipoca ágil, trabalhei como desenvolvedor backend na criação de uma api do podcast da empresa Pipoca Ágil. La desenvolvi toda a parte do backend da api com Framework NestJS.
+Fiz crud completo, sistema de login com token jwt, guards, Querys, roles alem de deploy e a documentação com swagger.
+tambem aprendi a Metodologia ágil Scrum, trabalhei com Jira e Notion alem de trabalhar em equipe.
+
+foi o meu primeiro contato com o Redis na pratica, pois nas outras aplicações que desenvolvi sempre ultilizei o cache-manager.
+
+Adoro desafios e estou pronto para esse próximo passo.
+
+
 
 ## Installation
 
