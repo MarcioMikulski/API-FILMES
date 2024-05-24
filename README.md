@@ -31,7 +31,7 @@ O deploy dela foi realizada no heroku com o Container Registry.
 
 ## About me
 Trabalho com o Nestjs a um ano, entre estudos, projetos pessoais e trabalho voluntario.
-Como voluntario na empresa pipoca ágil, trabalhei como desenvolvedor backend na criação de uma api do podcast da empresa Pipoca Ágil. La desenvolvi toda a parte do backend da api com Framework NestJS.
+Como voluntario na empresa pipoca ágil, trabalhei como desenvolvedor backend no time POPCORN na criação de uma api do podcast da empresa Pipoca Ágil. La desenvolvi toda a parte do backend da api com Framework NestJS.
 Fiz crud completo, sistema de login com token jwt, guards, Querys, roles, testes com JEST, alem de deploy e a documentação com swagger.
 tambem aprendi a Metodologia ágil Scrum, trabalhei com Jira e Notion alem de trabalhar em equipe.
 
