@@ -26,7 +26,7 @@
 
 Está é uma aplicação Nestjs, uma API de Filmes, onde construi uma CRUD completa nela. Todos os endpoints dessa CRUD só podem ser consumidas por um usuário autenticado.
 Tem o endpojnt para criar o usuario, um para logar e adquirir o Token JWT e assim pode logar na api e pode ultilizar o crud, lembrando que se o usuario não estiver logado e com o token, ele não podera navegar pelos endpoints do catalogo.
-Com o nestjs todo o codigo é feito em TYPESCRIPT, banco de dados foi o POSTGRES com o TypeORM, Testes unitarios com Jest, para cache usamos o REDIS e para a documentação usamos o SWAGGER. 
+Com o nestjs todo o codigo é feito em TYPESCRIPT, banco de dados foi o POSTGRES com o TypeORM, Testes unitarios com Jest, para cache usamos o REDIS e para a documentação usamos o SWAGGER e tambem usei Docker file e docker compose
 O deploy dela foi realizada no heroku com o Container Registry.
 
 ## About me
