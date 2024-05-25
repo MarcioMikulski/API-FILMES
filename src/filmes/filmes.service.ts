@@ -53,14 +53,21 @@ export class FilmesService {
     return this.convertToDTO(filme);
   }
 
-  async isTituloTaken(titulo: string): Promise<boolean> {
-    const existingFilme = await this.filmeRepository.findOne({
-      where: { titulo },
-    });
-    return !!existingFilme;
+  async findByTitle(titulo: string): Promise<Filme> {
+    const filme = await this.filmeRepository.findOne({ where: { titulo } });
+    if (!filme) {
+      throw new NotFoundException('Filme não encontrado');
+    }
+    return filme;
   }
 
-  emptyTitulo(titulo: string): boolean {
+  async isTituloTaken(titulo: string): Promise<boolean> {
+    const filme = await this.filmeRepository.findOne({ where: { titulo } });
+    return !!filme;
+  }
+  
+ 
+ emptyTitulo(titulo: string): boolean {
     if (!titulo || titulo.trim() === '') {
       return true;
     } else {
